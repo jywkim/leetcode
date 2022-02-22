@@ -1,16 +1,20 @@
 var mySqrt = function(x) {
-    let start = 0, end = x, mid = 0;
-    
-    while (start + 1 < end) {
-        mid = start + (end - start) / 2;
+    if (x <= 0) {
+        return 0;
+    }
+
+    let low = 1;
+    let high = x;
+    while (low <= high) {
+        let mid = parseInt(low + (high - low) / 2);
         if (mid * mid === x) {
             return mid;
         } else if (mid * mid < x) {
-            start = mid;
+            low = mid + 1;
         } else {
-            end = mid;
+            high = mid - 1;
         }
     }
 
-    return end * end === x ? end : start;
+    return high * high < x ? high : low; 
 };
