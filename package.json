@@ -2,7 +2,7 @@
   "name": "leetcode",
   "version": "1.0.0",
   "description": "[LeetCode](https://leetcode.com/) problems for practice.",
-"scripts": {
+  "scripts": {
     "start": "node main.js",
     "test": "jest"
   },
@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "jest": "^28.0.3"
+  },
+  "devDependencies": {
+    "react-test-renderer": "^18.1.0"
   }
 }
