@@ -7,3 +7,5 @@ var singleNumber = function(nums) {
     }
     return res;
 };
+
+module.exports = singleNumber;

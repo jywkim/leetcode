@@ -12,3 +12,5 @@ var generate = function(numRows) {
     }
     return array;
 };
+
+module.exports = generate;

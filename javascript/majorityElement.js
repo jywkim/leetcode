@@ -16,3 +16,5 @@ var majorityElement = function(nums) {
     }
     return majorityNum;
 };
+
+module.exports = majorityElement;

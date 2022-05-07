@@ -11,3 +11,5 @@ var containsDuplicate = function(nums) {
     }
     return false;
 };
+
+module.exports = containsDuplicate;

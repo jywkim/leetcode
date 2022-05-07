@@ -9,4 +9,8 @@ var reverseString = function(s) {
         l++;
         r--;
     }
+    //Return for testing
+    return s;
 };
+
+module.exports = reverseString;

@@ -6,3 +6,5 @@ var missingNumber = function(nums) {
     }
     return sum;
 };
+
+module.exports = missingNumber;

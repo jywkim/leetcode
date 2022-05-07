@@ -10,4 +10,8 @@ var moveZeroes = function(nums) {
     for (let i = nonZeroIndex; i < len; i++) {
         nums[i] = 0;
     }
+    //Return for testing
+    return nums;
 };
+
+module.exports = moveZeroes;
