@@ -1,11 +1,15 @@
 const func = require('../javascript/moveZeroes');
 
 describe("Move Zeroes", () => {
-    test('Input nums = [0,1,0,3,12] Outputs [1,3,12,0,0]', () => {
-        expect(func([0,1,0,3,12])).toEqual([1,3,12,0,0]);
+    const input = [0,1,0,3,12];
+    const output = [1,3,12,0,0];
+    test('Input: ' + input + ', Output: ' + output, () => {
+        expect(func(input)).toEqual(output);
     });
 
-    test('Input nums = [0] Outputs [0]', () => {
-        expect(func([0])).toEqual([0]);
+    const input2 = [0];
+    const output2 = [0];
+    test('Input: ' + input2 + ', Output: ' + output2, () => {
+        expect(func(input2)).toEqual(output2);
     });
 });

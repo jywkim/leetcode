@@ -1,15 +1,21 @@
 const func = require('../javascript/singleNumber');
 
 describe("Single Number", () => {
-    test('Input nums = [2,2,1] Outputs 1', () => {
-        expect(func([2,2,1])).toBe(1);
+    const input = [2,2,1];
+    const output = 1;
+    test('Input: ' + input + ', Output: ' + output, () => {
+        expect(func(input)).toBe(output);
     });
-    
-    test('Input nums = [4,1,2,1,2] Outputs 4', () => {
-        expect(func([4,1,2,1,2])).toBe(4);
+
+    const input2 = [4,1,2,1,2];
+    const output2 = 4;
+    test('Input: ' + input2 + ', Output: ' + output2, () => {
+        expect(func(input2)).toBe(output2);
     });
-    
-    test('Input nums = [1] Outputs 1', () => {
-        expect(func([1])).toBe(1);
+
+    const input3 = [1];
+    const output3 = 1;
+    test('Input: ' + input3 + ', Output: ' + output3, () => {
+        expect(func(input3)).toBe(output3);
     });
 });

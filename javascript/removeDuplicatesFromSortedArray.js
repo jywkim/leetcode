@@ -9,3 +9,5 @@ var removeDuplicates = function(nums) {
 
     return i + 1;
 };
+
+module.exports = removeDuplicates;

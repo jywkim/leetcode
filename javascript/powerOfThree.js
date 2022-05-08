@@ -7,3 +7,5 @@ var isPowerOfThree = function(n) {
         return false;
     }
 };
+
+module.exports = isPowerOfThree;

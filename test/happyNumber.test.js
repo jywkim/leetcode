@@ -1,14 +1,14 @@
-const func = require('../javascript/majorityElement');
+const func = require('../javascript/happyNumber');
 
-describe("Majority Element", () => {
-    const input = [3,2,3];
-    const output = 3;
+describe("Happy Number", () => {
+    const input = 19;
+    const output = true;
     test('Input: ' + input + ', Output: ' + output, () => {
         expect(func(input)).toBe(output);
     });
     
-    const input2 = [2,2,1,1,1,2,2];
-    const output2 = 2;
+    const input2 = 2;
+    const output2 = false;
     test('Input: ' + input2 + ', Output: ' + output2, () => {
         expect(func(input2)).toBe(output2);
     });

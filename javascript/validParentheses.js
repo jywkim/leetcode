@@ -15,3 +15,5 @@ var isValid = function(s) {
     }
     return array.length === 0;
 };
+
+module.exports = isValid;

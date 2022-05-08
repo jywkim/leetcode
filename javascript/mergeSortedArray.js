@@ -5,4 +5,9 @@ var merge = function(nums1, m, nums2, n) {
     while (j >= 0) {
         nums1[k--] = i >= 0 && nums1[i] > nums2[j] ? nums1[i--] : nums2[j--];
     }
+
+    //Return for testing
+    return nums1;
 };
+
+module.exports = merge;

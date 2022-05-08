@@ -13,3 +13,5 @@ function sumOfSquares(n) {
         return sum + Math.pow(num, 2);
     }, 0);
 }
+
+module.exports = isHappy;
