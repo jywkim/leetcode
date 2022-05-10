@@ -18,3 +18,5 @@ var mySqrt = function(x) {
 
     return high * high < x ? high : low; 
 };
+
+module.exports = mySqrt;

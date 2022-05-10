@@ -14,3 +14,5 @@ var reverseStr = function(s, k) {
 
     return s.join("");
 };
+
+module.exports = reverseStr;

@@ -8,3 +8,5 @@ var intersect = function(nums1, nums2) {
     }
     return res;
 };
+
+module.exports = intersect;

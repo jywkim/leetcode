@@ -12,3 +12,5 @@ var reverseWords = function(s) {
         return s.join("");
     }).join(" ");
 };
+
+module.exports = reverseWords;

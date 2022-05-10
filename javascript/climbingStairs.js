@@ -8,3 +8,5 @@ var climbStairs = function(n) {
 	}
 	return steps[n];
 };
+
+module.exports = climbStairs;
