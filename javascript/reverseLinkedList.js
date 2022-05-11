@@ -17,3 +17,5 @@ var reverseList = function(head) {
     }
     return reverse;
 };
+
+module.exports = reverseList;

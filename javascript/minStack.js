@@ -24,3 +24,5 @@ MinStack.prototype.top = function() {
 MinStack.prototype.getMin = function() {
     return this.min.length ? this.min[this.min.length - 1] : 0;
 };
+
+module.exports = MinStack;
