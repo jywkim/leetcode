@@ -7,3 +7,5 @@ function symmetric(l, r) {
     if (l === null || r === null) return false;
     return (l.val === r.val) && symmetric(l.left, r.right) && symmetric(l.right, r.left);
 }
+
+module.exports = isSymmetric;

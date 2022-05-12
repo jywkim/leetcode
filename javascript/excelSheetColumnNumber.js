@@ -7,3 +7,5 @@ var titleToNumber = function(columnTitle) {
     }
     return res;
 };
+
+module.exports = titleToNumber;

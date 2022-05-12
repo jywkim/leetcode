@@ -19,3 +19,5 @@ var searchInsert = function(nums, target) {
 
     return (nums[mid] > target) ? mid : (mid + 1);
 };
+
+module.exports = searchInsert;
