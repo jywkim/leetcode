@@ -7,3 +7,5 @@ var isPalindrome = function(head) {
     }
     return current === reverse;
 };
+
+module.exports = isPalindrome;
