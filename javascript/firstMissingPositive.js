@@ -21,3 +21,5 @@ function swap(nums, i , j) {
     nums[i] = nums[j];
     nums[j] = temp;
 }
+
+module.exports = firstMissingPositive;

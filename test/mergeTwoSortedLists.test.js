@@ -1,20 +1,4 @@
-const func = require('../javascript/mergeTwoSortedLists');
-
-function ListNode(val, next) {
-  this.val = (val===undefined ? 0 : val)
-  this.next = (next===undefined ? null : next)
-}
-
- function createLinkedList(array) {
-    return array.reverse().reduce((acc, curr) => {
-        if (acc == null) {
-          acc = new ListNode(curr);
-        } else {
-          acc = new ListNode(curr, acc);
-        }
-        return acc;
-      }, null);
- }
+const {mergeTwoLists, createLinkedList} = require('../javascript/mergeTwoSortedLists');
  
 describe("Merge Two Sorted Lists", () => {
     const inputA = [1,2,4];
@@ -24,7 +8,7 @@ describe("Merge Two Sorted Lists", () => {
       let headA = createLinkedList(inputA);
       let headB = createLinkedList(inputB);
       let outputList = createLinkedList(output)
-      expect(func(headA, headB)).toEqual(outputList);
+      expect(mergeTwoLists(headA, headB)).toEqual(outputList);
     });
 
     const input2A = [];
@@ -34,7 +18,7 @@ describe("Merge Two Sorted Lists", () => {
       let headA = createLinkedList(input2A);
       let headB = createLinkedList(input2B);
       let outputList = createLinkedList(output2)
-      expect(func(headA, headB)).toEqual(outputList);
+      expect(mergeTwoLists(headA, headB)).toEqual(outputList);
     });
 
     const input3A = [];
@@ -44,6 +28,6 @@ describe("Merge Two Sorted Lists", () => {
       let headA = createLinkedList(input3A);
       let headB = createLinkedList(input3B);
       let outputList = createLinkedList(output3)
-      expect(func(headA, headB)).toEqual(outputList);
+      expect(mergeTwoLists(headA, headB)).toEqual(outputList);
     });
 });

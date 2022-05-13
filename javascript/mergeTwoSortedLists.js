@@ -14,9 +14,20 @@ var mergeTwoLists = function(list1, list2) {
     return newList.next;
 };
 
-function ListNode(val, next) {
+var ListNode = function(val, next) {
   this.val = (val===undefined ? 0 : val)
   this.next = (next===undefined ? null : next)
 }
 
-module.exports = mergeTwoLists;
+var createLinkedList = function(array) {
+  return array.reverse().reduce((acc, curr) => {
+      if (acc == null) {
+        acc = new ListNode(curr);
+      } else {
+        acc = new ListNode(curr, acc);
+      }
+      return acc;
+    }, null);
+}
+
+ module.exports = {mergeTwoLists, createLinkedList};

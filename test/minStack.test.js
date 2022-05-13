@@ -1,26 +1,4 @@
-const MinStack = require('../javascript/minStack');
-
-function executeStack(minStack, method, param, output, i) {
-    switch(method) {
-        case "MinStack":
-            expect(i).toBe(0);
-            break;
-        case "push":
-            minStack.push(param);
-            break;
-        case "pop":
-            minStack.pop();
-            break;
-        case "top":
-            expect(minStack.top()).toBe(output);
-            break;
-        case "getMin":
-            expect(minStack.getMin()).toBe(output);
-            break;
-        default:
-
-        }
- }
+const {MinStack, executeStack} = require('../javascript/minStack');
 
 describe("Min Stack", () => {
     const input = ["MinStack","push","push","push","getMin","pop","top","getMin"]

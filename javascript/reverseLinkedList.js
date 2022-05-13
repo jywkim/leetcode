@@ -18,4 +18,20 @@ var reverseList = function(head) {
     return reverse;
 };
 
-module.exports = reverseList;
+var ListNode = function(val, next) {
+    this.val = (val===undefined ? 0 : val)
+    this.next = (next===undefined ? null : next)
+  }
+  
+var createLinkedList = function(array) {
+    return array.reverse().reduce((acc, curr) => {
+        if (acc == null) {
+            acc = new ListNode(curr);
+        } else {
+            acc = new ListNode(curr, acc);
+        }
+        return acc;
+        }, null);
+}
+  
+module.exports = {reverseList, createLinkedList};

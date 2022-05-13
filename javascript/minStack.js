@@ -25,4 +25,26 @@ MinStack.prototype.getMin = function() {
     return this.min.length ? this.min[this.min.length - 1] : 0;
 };
 
-module.exports = MinStack;
+function executeStack(minStack, method, param, output, i) {
+    switch(method) {
+        case "MinStack":
+            expect(i).toBe(0);
+            break;
+        case "push":
+            minStack.push(param);
+            break;
+        case "pop":
+            minStack.pop();
+            break;
+        case "top":
+            expect(minStack.top()).toBe(output);
+            break;
+        case "getMin":
+            expect(minStack.getMin()).toBe(output);
+            break;
+        default:
+
+        }
+ }
+
+ module.exports = {MinStack, executeStack};
